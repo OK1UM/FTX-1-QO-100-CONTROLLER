@@ -1,7 +1,7 @@
 FTX-1 QO-100 CONTROLLER / MONITOR
 
 Information and function reference Based on:
-FTX1_CAT_Monitor(20260920-161848).ino
+FTX1_CAT_Monitor.ino
 
 Purpose
 
