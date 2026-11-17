@@ -1,6 +1,6 @@
 # FTX-1 QO-100 CONTROLLER
 
-A compact Arduino-based CAT monitor and QO-100 DX controller for the **Yaesu FTX-1** and DX Patrol UP/DOWN converter.
+A compact Arduino-based CAT monitor and QO-100 controller for the **Yaesu FTX-1** and **DX Patrol UP/DOWN converter**, featuring an adjustable **DX offset** for precise uplink frequency correction.
 
 It focuses on two functions:
 
