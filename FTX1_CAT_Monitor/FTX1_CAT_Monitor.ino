@@ -1,7 +1,7 @@
 /*
   ======================================================================
   FTX1_CAT_Monitor.ino  version 1.0
-  QO-100 MAIN-to-SUB automatic synchronization controller / monitor for Yaesu FTX-1
+  QO-100 MAIN-to-SUB automatic synchronization controller / monitor for Yaesu FTX-1 and DX Patrol UP/DOWN converter.
   (C) OK1UM, Martin Lipert, ok1um@seznam.cz
   All rights reserved.
   
