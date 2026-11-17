@@ -113,7 +113,7 @@ The project is shown running on an Arduino Nano with an OLED display.
 
 ## Demonstration
 
-[▶ Watch the FTX-1 QO-100 demonstration video](FTX1_QO100_50procent.mp4)
+[▶ Watch the FTX-1 QO-100 demonstration video](FTX1_QO100.mp4)
 
 ---
 
