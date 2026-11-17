@@ -1,4 +1,4 @@
-# FTX-1 QO-100 Monitor
+# FTX-1 QO-100 CONTROLLER
 
 A compact Arduino-based CAT monitor and QO-100 DX controller for the **Yaesu FTX-1**.
 
