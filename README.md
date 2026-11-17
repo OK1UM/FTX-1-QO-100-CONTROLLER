@@ -2,10 +2,10 @@
 
 A compact Arduino-based CAT monitor and QO-100 DX controller for the **Yaesu FTX-1**.
 
-This is a reduced version of the original FT-840 monitor project. It focuses on two functions:
+It focuses on two functions:
 
 - **QO-100 DX** – calculates and synchronizes the SUB transmit frequency from the MAIN receive frequency.
-- **CAT Bridge** – provides a transparent CAT connection between the FTX-1 and PC software such as Omni-Rig.
+- **CAT 1** – provides a transparent CAT connection between the FTX-1 and PC software such as Omni-Rig.
 
 ---
 
@@ -35,21 +35,11 @@ The adjustable DX offset has the following range and step:
 - Range: **−25.0 kHz to +25.0 kHz**
 - Step: **2.5 kHz**
 
-### CAT Bridge
-
-The CAT Bridge passes CAT traffic between the FTX-1 and the PC without generating its own polling traffic.
-
-- Radio side: hardware UART (`Serial`), **38400 baud, 8N1**
-- PC / Omni-Rig side: `SoftwareSerial`, pins **D10 / D11**, **4800 baud**
-- The bridge remains passive and transparent.
-- A CAT response is considered received when a complete ASCII response terminated by `;` arrives from the FTX-1.
-
 ### CAT / ERR indication
 
 The meaning of the CAT/ERR status depends on the operating mode:
 
 - **QO-100 DX:** based on validated replies returned by `FTX1CAT::readState()`.
-- **CAT Bridge:** passive indication; a complete CAT response ending in `;` must be received from the FTX-1.
 
 ---
 
@@ -95,9 +85,8 @@ The project is shown running on an Arduino Nano with an OLED display.
 1. Open the Arduino sketch in the Arduino IDE.
 2. Install the **FTX1CAT** library and make sure it is available to the sketch.
 3. Connect the controller to the FTX-1 CAT-3 interface.
-4. Connect the PC / Omni-Rig serial interface to Arduino pins D10 and D11.
-5. Select the correct Arduino board and serial port, then compile and upload the sketch.
-6. Configure the FTX-1 CAT settings as described above.
+4. Select the correct Arduino board and serial port, then compile and upload the sketch.
+5. Configure the FTX-1 CAT settings as described above.
 
 > **Important:** The `FTX1CAT` library must be installed alongside this sketch (in the Arduino libraries folder).
 
@@ -106,8 +95,6 @@ The project is shown running on an Arduino Nano with an OLED display.
 ## Important notes
 
 - QO-100 DX initialization does **not** use the PC/1W command. The documented FTX-1 CAT power command for the field head does not provide a 1 W value.
-- The original project's Omni-Rig virtual status protocol is retained. Only the radio-side state source has been changed to the FTX-1.
-- The CAT Bridge does not generate polling commands; it forwards traffic transparently.
 
 ---
 
