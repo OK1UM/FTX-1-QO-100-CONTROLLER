@@ -100,8 +100,7 @@ The project is shown running on an Arduino Nano with an OLED display.
 
 ## Demonstration
 
-
-https://github.com/user-attachments/assets/817766de-a232-4cd2-9834-5d6c1f6f90d9
+https://github.com/user-attachments/assets/15ab2a6d-adcf-4df5-9ac8-b0c0cf689826
 
 ---
 
