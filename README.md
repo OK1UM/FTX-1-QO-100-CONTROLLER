@@ -120,3 +120,5 @@ The project is shown running on an Arduino Nano with an OLED display.
 ## License
 
 See the [`LICENSE`](LICENSE) file for the terms of use.
+
+**73! Martin OK1UM**
